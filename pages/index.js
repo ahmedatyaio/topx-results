@@ -1,10 +1,13 @@
-import styled from 'styled-components'
-
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+import Navbar from '../components/Navbar'
+import SearchResults from '../components/SearchResults'
+import Footer from '../components/Footer'
 
 export default function Home() {
-  return <Title>My page</Title>
+  return (
+    <>
+      <Navbar />
+      <SearchResults />
+      <Footer />
+    </>
+  )
 }
